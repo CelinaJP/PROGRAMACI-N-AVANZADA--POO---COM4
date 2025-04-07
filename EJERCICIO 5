@@ -1,4 +1,4 @@
-from EJERCICIO 2 import Persona
+from EJERCICIO_4 import Persona
 
 
 class Libro:

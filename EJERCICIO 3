@@ -1,4 +1,4 @@
-from EJERCICIO 2 import Punto
+from EJERCICIO_2 import Punto
 class Linea:
   def __init__(self, punto_a, punto_b):
     self.__punto_a = punto_a
