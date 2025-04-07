@@ -1,24 +1,57 @@
-class Persona:
-  def __init__(self, nombre):
-    self.nombre = nombre
+from EJERCICIO 2 import Persona
 
-  def __str__(self):
-    return self.nombre
 
 class Libro:
   def __init__(self, titulo, autor, isbn, paginas, edicion, editorial, lugar, fecha):
-    self.titulo = titulo
-    self.autor = autor
-    self.isbn = isbn
-    self.paginas = paginas
-    self.edicion = edicion
-    self.editorial = editorial
-    self.lugar = lugar
-    self.fecha = fecha
+    self.__titulo = titulo
+    self.__autor = autor #instancia de Persona
+    self.__isbn = isbn
+    self.__paginas = paginas
+    self.__edicion = edicion
+    self.__editorial = editorial
+    self.__lugar = lugar
+    self.__fecha = fecha
+
+  #getters
+  def get_titulo(self): 
+    return self.__titulo
+  def get_autor(self): 
+    return self.__autor
+  def get_isbn(self):
+    return self.__isbn
+  def get_paginas(self):
+    return self.__paginas
+  def get_edicion(self):
+    return self.__edicion
+  def get_editorial(self):
+    return self.__editorial
+  def get_lugar(self):
+    return self.__lugar
+  def get_fecha(self):
+    return self.__fecha
+
+  #setters
+  def set_titulo(self, titulo):
+    self.__titulo = titulo
+  def set_autor(self, autor):
+    self.__autor = autor
+  def set_isbn(self, isbn):
+    self.__isbn = isbn
+  def set_paginas(self, paginas):
+    self.__paginas = paginas
+  def set_edicion(self, edicion):
+    self.__edicion = edicion
+  def set_editorial(self, editorial):
+    self.__editorial = editorial
+  def set_lugar(self, lugar):
+    self.__lugar = lugar
+  def set_fecha(self, fecha):
+    self.__fecha = fecha
+
 
   def mostrar_info(self):
-    return f"""Título: {self.titulo} {self.edicion}
-  Autor: {self.autor}
-  ISBN: {self.isbn}, {self.lugar}
- {self.fecha}
-  {self.paginas}paginas"""
+    return f"""Título: {self.__titulo} {self.__edicion}
+  Autor: {self.__autor}
+  ISBN: {self.__isbn}, {self.__lugar}
+ {self.__fecha}
+  {self.__paginas}paginas"""
