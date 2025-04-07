@@ -1,17 +1,18 @@
+
 class Punto:
-  def __init__(self, x, y):
-    self.x = x
-    self.y = y
+  def __init__(self, x:int, y:int):
+    self._x = x
+    self._y = y
 
   def eje_x(self):
-    return self.x
+    return self._x
 
   def eje_y(self):
-    return self.y
+    return self._y
 
   def impresion(self):
-    return f"({self.x}, {self.y})"
+    return f"({self._x}, {self._y})"
 
   def opuesto(self):
-    return Punto(-self.x, -self.y)
+    return Punto(-self._x, -self._y)
 
