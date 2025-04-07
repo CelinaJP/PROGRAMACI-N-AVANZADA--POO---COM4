@@ -15,4 +15,16 @@ class Punto:
 
   def opuesto(self):
     return Punto(-self.__x, -self.__y)
+  
+  def get_x(self): #Los getters y setters ayudan cuando los atributos son privados
+      return self.__x
+
+  def set_x(self, nuevo_x):
+      self.__x = nuevo_x
+
+  def get_y(self):
+      return self.__y
+
+  def set_y(self, nuevo_y):
+      self.__y = nuevo_y
 
